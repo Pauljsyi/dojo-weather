@@ -121,7 +121,7 @@ main {
 /* COOKIE */
 
 .cookie {
-  visibility: hidden;
+  /* visibility: hidden; */
   background-color: white;
   display: flex;
   /* width: 55%; */
