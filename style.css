@@ -11,6 +11,9 @@
   font-family: "Manrope", sans-serif;
   font-family: "Mukta", sans-serif;
 }
+a {
+  cursor: pointer;
+}
 
 nav {
   background-color: rgb(159, 197, 248);
@@ -135,6 +138,7 @@ main {
   /* margin-top: -100px; */
   left: 50%;
   margin-left: -525px;
+  transition-timing-function: ease-in-out;
 }
 
 .cookie img {

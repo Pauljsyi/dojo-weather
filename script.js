@@ -5,7 +5,12 @@ console.log(..."page loaded");
 
 function closeModal(e) {
   console.log(e);
+
   document.querySelector(e).remove();
+}
+
+function loading() {
+  alert("Loading weather report ...");
 }
 
 let select = document.querySelector("select");
@@ -47,20 +52,20 @@ function convertDegrees(e) {
     // from fahrenheit to celsius
     // change all high temperatures to celsius
     for (var i = 0; i < highTemp.length; i++) {
-      console.log("current index: ", i);
+      // console.log("current index: ", i);
       let parsed = parseInt(highTemp[i].innerText);
-      console.log("parsed: ", parsed);
+      // console.log("parsed: ", parsed);
       let converted = ((parsed - 32) * 5) / 9;
-      console.log("converted: ", converted);
+      // console.log("converted: ", converted);
       highTemp[i].innerText = Math.round(converted) + "°";
     }
     // change all low temperatures to celsius
     for (var i = 0; i < lowTemp.length; i++) {
-      console.log("current index: ", i);
+      // console.log("current index: ", i);
       let parsed = parseInt(lowTemp[i].innerText);
-      console.log("parsed: ", parsed);
+      // console.log("parsed: ", parsed);
       let converted = ((parsed - 32) * 5) / 9;
-      console.log("converted: ", converted);
+      // console.log("converted: ", converted);
       lowTemp[i].innerText = Math.round(converted) + "°";
     }
   }
