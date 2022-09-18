@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&family=Mukta&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dojo Weather</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <h1>DojoWeather</h1>
+        <ul>
+          <li><a href="">Burbank</a></li>
+          <li><a href="">Chicago</a></li>
+          <li><a href="">Dallas</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <h1>San Jose</h1>
+      <div class="show-temp">
+        <h3>show temperature in</h3>
+        <select name="degrees" id="degrees" onchange="convertDegrees(this)">
+          <option value="celsius">℃</option>
+          <option value="fahrenheit">℉</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <div class="card">
+        <h1>Today</h1>
+        <img src="assets/some_rain.png" alt="dewey clouds image" />
+        <p>some rain</p>
+        <div class="high-low">
+          <h2 class="high-temp">24°</h2>
+          <h2 class="low-temp">18°</h2>
+        </div>
+      </div>
+      <div class="card">
+        <h1>Tomorrow</h1>
+        <img src="assets/some_rain.png" alt="dewey clouds image" />
+        <p>some sun</p>
+        <div class="high-low">
+          <h2 class="high-temp">27°</h2>
+          <h2 class="low-temp">19°</h2>
+        </div>
+      </div>
+      <div class="card">
+        <h1>Friday</h1>
+        <img src="assets/some_rain.png" alt="dewey clouds image" />
+        <p>some clouds</p>
+        <div class="high-low">
+          <h2 class="high-temp">21°</h2>
+          <h2 class="low-temp">16°</h2>
+        </div>
+      </div>
+      <div class="card">
+        <h1>Saturday</h1>
+        <img src="assets/some_rain.png" alt="dewey clouds image" />
+        <p>some sun</p>
+        <div class="high-low">
+          <h2 class="high-temp">26°</h2>
+          <h2 class="low-temp">21°</h2>
+        </div>
+      </div>
+    </main>
+    <!-- COOKIE -->
+    <div class="cookie">
+      <img src="assets/cookie.png" alt="cookie crumble image" />
+      <div class="cookie-text">
+        <h1>Stop! Cookie time</h1>
+        <p>
+          We use cookies (sadly not the edible ones) to personalize content and
+          ads, to provide social media features and to analyze our traffic
+          <a href="">Read more...</a>
+        </p>
+      </div>
+      <button type="submit" onclick="closeModal('.cookie')">I Accept</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
